@@ -1,0 +1,114 @@
+.hero_image {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 0;
+}
+
+
+
+.profile-container {
+    position: relative;
+    width: 310px;
+    height: 310px;
+    perspective: 1000px; 
+    
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform-style: preserve-3d;
+    animation: border-move 5s linear infinite;
+    
+  }
+  
+  .profile-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: linear-gradient(145deg, rgba(102, 230, 11, 0.932), rgba(0, 255, 255, 0.1));
+    filter: blur(5px);
+    transition: opacity 0.5s ease;
+    border-radius: 50%;
+  }
+  
+  .profile-container:hover .profile-image {
+    transform: rotateY(20deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  }
+  
+  .profile-container:hover::before {
+    opacity: 0.8;
+  }
+  
+  .border-animation {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 17px;
+    border: 7px solid;
+    box-sizing: border-box;
+    animation: border-move 5s linear infinite, border-color-change 5s linear infinite;
+    border-radius: 50%;
+  }
+  
+  @keyframes border-move {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateX(5px) translateY(5px);
+    }
+    50% {
+      transform: translateX(0) translateY(10px);
+    }
+    75% {
+      transform: translateX(-5px) translateY(5px);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+  
+  @keyframes border-color-change {
+    0% {
+      border-color: red;
+    }
+    25% {
+      border-color: blue;
+    }
+    50% {
+      border-color: green;
+    }
+    75% {
+      border-color: yellow;
+    }
+    100% {
+      border-color: red;
+    }
+  }
+
+@media (max-width: 768px) {
+    .hero_image{
+        margin-top: 200px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    }
+    .profile-image{
+        width: 200px;
+    }
+   
+}
