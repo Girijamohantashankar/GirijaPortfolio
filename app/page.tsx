@@ -4,11 +4,12 @@ import {
 	Experience,
 	Feedbacks,
 	Hero,
-	
 	Tech,
 	Works,
 	StarsCanvas,
 } from "./components";
+
+
 
 export default function Home() {
 	return (

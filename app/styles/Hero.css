@@ -62,7 +62,14 @@
     animation: border-move 5s linear infinite, border-color-change 5s linear infinite;
     border-radius: 50%;
   }
-  
+  .violet-gradient{
+    height: 400px;
+  }
+  .counter_social{
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 50px;
+  }
   @keyframes border-move {
     0% {
       transform: translateX(0) translateY(0);
@@ -98,6 +105,48 @@
       border-color: red;
     }
   }
+
+.social_icon_content{
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.social_icon_content,.social_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social_content{
+  gap: 20px;
+}
+.social_content h1{
+  display: flex;
+  flex-direction: column;
+  /* gap: 40px; */
+  
+}
+.social_content h1:nth-child(2){
+  font-size: 20px;
+}
+.social_ico{
+  width: 50px;
+  height: 50px;
+}
+.count{
+  color: #915EFF;
+  font-size: 30px;
+  font-weight: bold;
+}
+.social_ico h1 span{
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .hero_image{

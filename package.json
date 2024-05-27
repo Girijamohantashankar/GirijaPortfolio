@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@jdion/tilt-react": "^1.0.0",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.6",
@@ -26,8 +29,8 @@
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/react-dom": "^18",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/three": "^0.164.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
